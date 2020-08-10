@@ -1,0 +1,30 @@
+{
+  "name": "streamcountdown",
+  "version": "2.0.0",
+  "main": "",
+  "author": {
+    "name": "Voakie",
+    "email": "contact@voakie.com",
+    "url": "https://voakie.com/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@types/react": "^16.9.45",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-input-mask": "^2.0.5",
+    "parcel": "^1.12.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-input-mask": "^2.0.4",
+    "react-tooltip": "^4.2.8"
+  },
+  "scripts": {
+    "dev": "parcel src/new.html",
+    "build": "parcel build src/new.html"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}

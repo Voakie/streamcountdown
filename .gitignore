@@ -1,0 +1,7 @@
+node_modules/*
+.cache/*
+dist/*
+!dist/index.html
+!dist/index.js
+!dist/index.css
+yarn-error.log
