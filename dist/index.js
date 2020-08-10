@@ -47,6 +47,16 @@
   }
 
   setInterval(function () {
+    if (time.startsWith("TODAY")) {
+      var dt = new Date()
+      var yr = dt.getFullYear() + ""
+      var mt = dt.getMonth() + 1
+      mt = mt > 9 ? mt : "0" + mt
+      var dy = dt.getDate()
+      dy = dy > 9 ? dy : "0" + dy
+      time = time.replace("TODAY", yr + mt + dy)
+    }
+
     var startAt = moment(time, "YYYYMMDD, h:mm:ss").locale(locale)
     if (timeDisplay === "1") {
       $(".time").text(startAt.calendar())

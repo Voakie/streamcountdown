@@ -193,16 +193,7 @@ export class Create extends React.Component<{}, CreateState> {
   create() {
     let date = ""
     if (this.state.dateEasyOption === "today") {
-      const now = new Date()
-      const dt = now.getDate()
-      const month = now.getMonth() + 1
-      date =
-        "" +
-        now.getFullYear() +
-        "" +
-        (month > 9 ? month : "0" + month) +
-        "" +
-        (dt > 9 ? dt : "0" + dt)
+      date = "TODAY"
     } else if (this.state.dateEasyOption === "tomorrow") {
       const tmrw = new Date()
       tmrw.setDate(new Date().getDate() + 1)
@@ -220,7 +211,8 @@ export class Create extends React.Component<{}, CreateState> {
       const custom = this.state.dateCustomValue.split(".")
       date = custom[2] + custom[1] + custom[0]
     }
-    if (!Number.isInteger(Number.parseInt(date))) return alert("Please enter a valid date")
+    if (!Number.isInteger(Number.parseInt(date)) && date !== "TODAY")
+      return alert("Please enter a valid date")
 
     let time = this.state.timeValue.replace(":", "")
     if (!Number.isInteger(Number.parseInt(time))) return alert("Please enter a valid time")
@@ -287,7 +279,8 @@ export class Create extends React.Component<{}, CreateState> {
           <Segment>
             <div style={{ paddingRight: "10px", flexGrow: 1 }}>
               <Label>
-                Date <HelpTooltip msg="Enter custom date as dd.mm.yyyy" />
+                Date{" "}
+                <HelpTooltip msg="Enter custom date as dd.mm.yyyy. Use 'today' if you don't care about the date" />
               </Label>
 
               {this.state.dateEasyOption === "custom" ? (
