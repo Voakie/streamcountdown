@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+Array [
+  null,
+  <div
+    class="css-2asdel"
+    data-tip="Test"
+  >
+    <span>
+      ?
+    </span>
+  </div>,
+]
+`;

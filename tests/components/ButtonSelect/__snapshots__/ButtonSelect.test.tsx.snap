@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should allow interaction: shallowAfterChange 1`] = `
+<Styled(div)>
+  <Styled(button)
+    className="first "
+    key="0"
+    onClick={[Function]}
+  >
+    Value One
+  </Styled(button)>
+  <Styled(button)
+    className=""
+    key="1"
+    onClick={[Function]}
+  >
+    Value Two
+  </Styled(button)>
+  <Styled(button)
+    className=""
+    key="2"
+    onClick={[Function]}
+  >
+    Value Three
+  </Styled(button)>
+  <Styled(button)
+    className="last active "
+    key="3"
+    onClick={[Function]}
+  >
+    Value Four
+  </Styled(button)>
+</Styled(div)>
+`;
+
+exports[`should allow interaction: shallowBeforeChange 1`] = `
+<Styled(div)>
+  <Styled(button)
+    className="first "
+    key="0"
+    onClick={[Function]}
+  >
+    Value One
+  </Styled(button)>
+  <Styled(button)
+    className="active "
+    key="1"
+    onClick={[Function]}
+  >
+    Value Two
+  </Styled(button)>
+  <Styled(button)
+    className=""
+    key="2"
+    onClick={[Function]}
+  >
+    Value Three
+  </Styled(button)>
+  <Styled(button)
+    className="last "
+    key="3"
+    onClick={[Function]}
+  >
+    Value Four
+  </Styled(button)>
+</Styled(div)>
+`;
+
+exports[`should render: static 1`] = `
+Array [
+  null,
+  <div
+    class="css-1gvrqq3"
+  >
+    <button
+      class="first  css-lcb152"
+    >
+      Value One
+    </button>
+    <button
+      class="active  css-lcb152"
+    >
+      Value Two
+    </button>
+    <button
+      class=" css-lcb152"
+    >
+      Value Three
+    </button>
+    <button
+      class="last  css-lcb152"
+    >
+      Value Four
+    </button>
+  </div>,
+]
+`;

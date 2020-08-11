@@ -25,6 +25,18 @@
     "build": "parcel build src/new.html"
   },
   "devDependencies": {
+    "@types/react-test-renderer": "^16.9.3",
+    "@types/sinon": "^9.0.4",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.9",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "enzyme-to-json": "^3.5.0",
+    "sinon": "^9.0.3",
+    "jest": "^26.3.0",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
   }
 }

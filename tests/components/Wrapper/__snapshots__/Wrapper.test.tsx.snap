@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+Array [
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-1wh7vik{min-height:100vh;width:100%;margin:0;padding:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-1wh7vik.dark{background:black;color:#dedede;}",
+      }
+    }
+    data-emotion-css="1wh7vik"
+  />,
+  <div
+    className="test css-1wh7vik"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": ".css-10u6qac{margin:auto;padding-bottom:20px;}",
+        }
+      }
+      data-emotion-css="10u6qac"
+    />
+    <div
+      className="css-10u6qac"
+    >
+      <p>
+        Test
+      </p>
+    </div>
+  </div>,
+]
+`;
